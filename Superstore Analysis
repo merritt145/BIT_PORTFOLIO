@@ -1,0 +1,25 @@
+SELECT *
+FROM superstore
+ORDER BY price desc;
+
+SELECT SUM(price)
+FROM superstore;
+
+SELECT MAX(PRICE)
+FROM superstore;
+
+SELECT AVG(PRICE)
+FROM superstore;
+
+SELECT SUM(price), item_name
+FROM superstore
+GROUP BY item_name
+
+SELECT COUNT(category)
+FROM superstore 
+WHERE category = "Kitchen Supplies"
+
+SELECT AVG(price)
+FROM superstore
+WHERE category = "Electronics";
+
