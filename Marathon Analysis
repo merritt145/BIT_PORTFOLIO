@@ -1,0 +1,18 @@
+SELECT participant_name,
+completion_fraction*100 as completion_percentage
+FROM marathon
+WHERE participant_name="Charlotte Chaze";
+
+SELECT participant_name,
+ROUND(completion_fraction*100) as completion_percentage
+FROM marathon
+WHERE participant_name="Charlotte Chaze";
+
+SELECT participant_name,
+ROUND(completion_fraction*100,1) as completion_percentage
+FROM marathon
+WHERE participant_name="Charlotte Chaze";
+
+SELECT participant_name
+,ROUND(completion_fraction*100,1) as completion_percent
+FROM marathon;
